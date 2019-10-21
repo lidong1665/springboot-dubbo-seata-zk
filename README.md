@@ -1398,10 +1398,16 @@ public class AccountExampleApplication {
 这时候控制台：
 
 ```
-2019-09-05 12:17:34.097  INFO 21860 --- [nio-8104-exec-4] i.s.s.i.c.controller.BusinessController  : 请求参数：BusinessDTO(userId=1, commodityCode=C201901140001, name=fan, count=50, amount=100)
-2019-09-05 12:17:34.146  INFO 21860 --- [nio-8104-exec-4] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.10.200:8091:2021380638]
-2019-09-05 12:17:34.150  INFO 21860 --- [nio-8104-exec-4] i.s.s.i.c.service.BusinessServiceImpl    : 开始全局事务，XID = 192.168.10.200:8091:2021380638
-2019-09-05 12:17:36.966  INFO 21860 --- [nio-8104-exec-4] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.10.200:8091:2021380638] commit status:Committed
+2019-10-21 12:04:54.816  INFO 12780 --- [nio-8104-exec-1] i.s.s.i.c.controller.BusinessController  : 请求参数：BusinessDTO(userId=1, commodityCode=C201901140001, name=fan, count=50, amount=100)
+2019-10-21 12:04:54.823  INFO 12780 --- [nio-8104-exec-1] i.s.common.loader.EnhancedServiceLoader  : load ContextCore[null] extension by class[io.seata.core.context.ThreadLocalContextCore]
+2019-10-21 12:04:54.829 ERROR 12780 --- [nio-8104-exec-1] i.s.config.zk.ZookeeperConfiguration     : getConfig client.tm.commit.retry.count is error or timeout,return defaultValue 1
+2019-10-21 12:04:54.830 ERROR 12780 --- [nio-8104-exec-1] i.s.config.zk.ZookeeperConfiguration     : getConfig client.tm.rollback.retry.count is error or timeout,return defaultValue 1
+2019-10-21 12:04:54.833  INFO 12780 --- [nio-8104-exec-1] i.s.common.loader.EnhancedServiceLoader  : load TransactionManager[null] extension by class[io.seata.tm.DefaultTransactionManager]
+2019-10-21 12:04:54.833  INFO 12780 --- [nio-8104-exec-1] io.seata.tm.TransactionManagerHolder     : TransactionManager Singleton io.seata.tm.DefaultTransactionManager@394cfa5a
+2019-10-21 12:04:54.840  INFO 12780 --- [nio-8104-exec-1] i.s.common.loader.EnhancedServiceLoader  : load LoadBalance[null] extension by class[io.seata.discovery.loadbalance.RandomLoadBalance]
+2019-10-21 12:04:55.037  INFO 12780 --- [nio-8104-exec-1] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.10.108:8091:2025358030]
+2019-10-21 12:04:57.473  INFO 12780 --- [nio-8104-exec-1] i.s.s.i.c.service.BusinessServiceImpl    : 开始全局事务，XID = 192.168.10.108:8091:2025358030
+2019-10-21 12:05:04.280  INFO 12780 --- [nio-8104-exec-1] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.10.108:8091:2025358030] commit status:Committed
 ```
 事务提交成功，
 
