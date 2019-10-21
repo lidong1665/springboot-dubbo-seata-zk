@@ -1130,28 +1130,27 @@ SET FOREIGN_KEY_CHECKS=1;
 server.port=8102
 spring.application.name=dubbo-account-example
 
-#====================================Dubbo配置===============================================
+#====================================Dubbo config===============================================
 dubbo.application.id= dubbo-account-example
 dubbo.application.name= dubbo-account-example
 dubbo.protocol.id=dubbo
 dubbo.protocol.name=dubbo
 dubbo.registry.id=dubbo-account-example-registry
-dubbo.registry.address=nacos://192.168.10.200:8848
+dubbo.registry.address=zookeeper://127.0.0.1:2181
 dubbo.protocol.port=20880
-dubbo.application.qosEnable=false
-dubbo.config-center.address=nacos://192.168.10.200:8848
-dubbo.metadata-report.address=nacos://192.168.10.200:8848
+dubbo.application.qos-enable=false
+dubbo.config-center.address=zookeeper://127.0.0.1:2181
+dubbo.metadata-report.address=zookeeper://127.0.0.1:2181
 
-#====================================mysql 配置============================================
+#====================================mysql config============================================
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
-spring.datasource.url=jdbc:mysql://192.168.10.200:3306/seata?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
-spring.datasource.username=lidong
-spring.datasource.password=cwj887766@@
+spring.datasource.url=jdbc:mysql://127.0.0.1:3306/seata?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+spring.datasource.username=root
+spring.datasource.password=123456
 
 
-#=====================================mybatis 配置======================================
+#=====================================mybatis config======================================
 mybatis.mapper-locations=classpath*:/mapper/*.xml
-
 ```
 ### 3.8.3 registry.conf（zk的配置）
  ##### registry.conf的配置
