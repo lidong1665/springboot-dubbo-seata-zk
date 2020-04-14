@@ -24,8 +24,8 @@ public class ZkDataInit {
         if (zkClient == null) {
             zkClient = new ZkClient("127.0.0.1:2181", 6000, 2000);
         }
-        if (!zkClient.exists("/config")) {
-            zkClient.createPersistent("/config", true);
+        if (!zkClient.exists("/seata")) {
+            zkClient.createPersistent("/seata", true);
         }
         //获取key对应的value值
         Properties properties = new Properties();
@@ -53,7 +53,7 @@ public class ZkDataInit {
      */
     public static boolean putConfig(final String dataId, final String content) {
         Boolean flag = false;
-        String path = "/config/" + dataId;
+        String path = "/seata/" + dataId;
         if (!zkClient.exists(path)) {
             zkClient.create(path, content, CreateMode.PERSISTENT);
             flag = true;

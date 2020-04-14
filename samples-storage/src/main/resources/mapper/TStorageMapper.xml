@@ -18,8 +18,8 @@
         id, commodity_code, name, count
     </sql>
 
-    <update id="decreaseStorage">
-        update t_storage set count = count-${count} where commodity_code = #{commodityCode}
+    <update id="decreaseStorage" parameterType="io.seata.samples.integration.storage.entity.TStorage">
+        update t_storage set count = #{count} where commodity_code = #{commodityCode}
     </update>
 
 </mapper>

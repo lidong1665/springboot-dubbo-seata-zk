@@ -2,15 +2,16 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="samples-account" />
-        <module name="samples-business" />
         <module name="samples-common" />
-        <module name="samples-order" />
         <module name="samples-storage" />
+        <module name="samples-account" />
+        <module name="samples-order" />
+        <module name="samples-business" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">

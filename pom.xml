@@ -32,7 +32,7 @@
         <nacos.version>0.2.3</nacos.version>
         <lombok.version>1.16.22</lombok.version>
         <dubbo.version>2.7.3</dubbo.version>
-        <seata.version>0.9.0</seata.version>
+        <seata.version>1.1.0</seata.version>
         <netty.version>4.1.42.Final</netty.version>
     </properties>
 
@@ -105,7 +105,7 @@
         <!-- https://mvnrepository.com/artifact/io.seata/seata-all -->
         <dependency>
             <groupId>io.seata</groupId>
-            <artifactId>seata-all</artifactId>
+            <artifactId>seata-spring-boot-starter</artifactId>
             <version>${seata.version}</version>
         </dependency>
 
@@ -173,10 +173,6 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
