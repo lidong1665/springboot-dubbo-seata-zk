@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(scanBasePackages = "io.seata.samples.integration.account")
 @MapperScan({"io.seata.samples.integration.account.mapper"})
 @EnableDubbo(scanBasePackages = "io.seata.samples.integration.account")
-@EnableAutoDataSourceProxy
 public class AccountExampleApplication {
 
 

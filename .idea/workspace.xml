@@ -1,18 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4aa52b9c-a3bf-4ba7-a4c0-324bcd7288eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_42_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_seata_seata_all_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples-account/src/main/resources/META-INF/services/io.seata.discovery.registry.RegistryProvider" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/ZookeeperRegisterServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/ZookeeperRegistryProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_0_1_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_seata_seata_all_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk-image.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
@@ -42,7 +78,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spotbugs_spotbugs_annotations_3_1_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spotbugs_spotbugs_annotations_3_1_9.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_no_aop_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_no_aop_4_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_7_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
@@ -57,8 +93,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__de_javakaffee_kryo_serializers_0_42.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_javakaffee_kryo_serializers_0_42.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__de_ruedigermoeller_fst_2_48_jdk_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_ruedigermoeller_fst_2_48_jdk_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_6_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_6_Final.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_32_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_seata_seata_all_0_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_42_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_42_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_seata_seata_all_1_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_seata_seata_spring_boot_starter_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_seata_seata_spring_boot_starter_1_3_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_jsr250_api_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_jsr250_api_1_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_cache_cache_api_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_cache_cache_api_1_1_0.xml" afterDir="false" />
@@ -149,6 +186,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_4_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_5.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_22.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" afterDir="false" />
@@ -188,230 +226,40 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples-account/samples-account.iml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/samples-account.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/AccountExampleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/AccountExampleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/SimpleZkClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/SimpleZkClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/config/SeataAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/config/SeataDataSourceAutoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/controller/TAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/controller/TAccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/dubbo/AccountDubboServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/dubbo/AccountDubboServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/entity/TAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/entity/TAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/mapper/TAccountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/mapper/TAccountMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/service/ITAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/service/ITAccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/service/TAccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/service/TAccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/src/main/resources/file.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/src/main/resources/mapper/TAccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/src/main/resources/mapper/TAccountMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/src/main/resources/registry.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/target/classes/file.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/target/classes/io/seata/samples/integration/account/AccountExampleApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/target/classes/io/seata/samples/integration/account/AccountExampleApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/target/classes/io/seata/samples/integration/account/config/SeataAutoConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/target/classes/mapper/TAccountMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/target/classes/mapper/TAccountMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/target/classes/registry.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-business/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples-account/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples-business/samples-business.iml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-business/samples-business.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/BusinessExampleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/BusinessExampleApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/ZkDataInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/ZkDataInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/config/SeataAutoConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/controller/BusinessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/controller/BusinessController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/service/BusinessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/service/BusinessService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/service/BusinessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/service/BusinessServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/samples-business/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/src/main/resources/file.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/src/main/resources/registry.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/src/main/resources/zk-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/samples-business/src/main/resources/zk-config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/target/classes/file.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/target/classes/io/seata/samples/integration/call/ZkDataInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/samples-business/target/classes/io/seata/samples/integration/call/ZkDataInit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/target/classes/io/seata/samples/integration/call/config/SeataAutoConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/target/classes/registry.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/target/classes/zk-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/samples-business/target/classes/zk-config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples-business/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-business/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples-common/samples-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/samples-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/aop/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/aop/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dto/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dto/AccountDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dto/BusinessDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dto/BusinessDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dto/CommodityDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dto/CommodityDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dto/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dubbo/AccountDubboService.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dubbo/AccountDubboService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dubbo/OrderDubboService.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dubbo/OrderDubboService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dubbo/StorageDubboService.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dubbo/StorageDubboService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/enums/RspStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/enums/RspStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/exception/DefaultException.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/exception/DefaultException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/response/BaseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/response/BaseResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/response/ObjectResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/response/ObjectResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples-order/samples-order.iml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/samples-order.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/OrderExampleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/OrderExampleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/config/SeataAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/config/SeataDataSourceAutoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/controller/TOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/controller/TOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/dubbo/OrderDubboServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/dubbo/OrderDubboServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/entity/TOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/entity/TOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/mapper/TOrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/mapper/TOrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/service/ITOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/service/ITOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/service/TOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/service/TOrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/src/main/resources/file.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/src/main/resources/mapper/TOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/src/main/resources/mapper/TOrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/src/main/resources/registry.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/target/classes/file.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/target/classes/io/seata/samples/integration/order/OrderExampleApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/target/classes/io/seata/samples/integration/order/OrderExampleApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/target/classes/io/seata/samples/integration/order/config/SeataAutoConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/target/classes/mapper/TOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/target/classes/mapper/TOrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/target/classes/registry.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples-order/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples-storage/samples-storage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/samples-storage.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/StorageExampleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/StorageExampleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/config/SeataAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/config/SeataDataSourceAutoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/controller/TStorageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/controller/TStorageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/dubbo/StorageDubboServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/dubbo/StorageDubboServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/entity/TStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/entity/TStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/mapper/TStorageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/mapper/TStorageMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/service/ITStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/service/ITStorageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/service/TStorageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/service/TStorageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/resources/file.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/resources/logback-spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/resources/mapper/TStorageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/src/main/resources/mapper/TStorageMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/resources/registry.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/target/classes/file.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/target/classes/io/seata/samples/integration/storage/StorageExampleApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/target/classes/io/seata/samples/integration/storage/StorageExampleApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/target/classes/io/seata/samples/integration/storage/config/SeataAutoConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/target/classes/logback-spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/target/classes/mapper/TStorageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/target/classes/mapper/TStorageMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/target/classes/registry.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot-dubbo-seata-zk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-dubbo-seata-zk.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/db_seata.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/db_seata.sql" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/samples-business/target/" />
-    <ignored path="$PROJECT_DIR$/samples-storage/target/" />
-    <ignored path="$PROJECT_DIR$/samples-common/target/" />
-    <ignored path="$PROJECT_DIR$/samples-account/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/samples-order/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="26" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/AccountExampleApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="21" selection-start-line="11" selection-end-line="11" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#687#688#0" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/io/seata/spring/annotation/datasource/EnableAutoDataSourceProxy.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/io/seata/spring/annotation/datasource/AutoDataSourceProxyRegistrar.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples-storage/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="174" column="17" selection-start-line="174" selection-start-column="17" selection-end-line="174" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE.jar!/org/springframework/beans/factory/support/BeanDefinitionBuilder.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/OrderExampleApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/controller/BusinessController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/config/SeataDataSourceAutoConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="60" column="31" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/io/seata/rm/datasource/DataSourceProxy.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -465,53 +313,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/samples-storage/target/classes/application.properties" />
-        <option value="$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/service/BusinessServiceImpl.java" />
-        <option value="$PROJECT_DIR$/samples-business/target/classes/file.conf" />
-        <option value="$PROJECT_DIR$/samples-business/src/main/resources/registry.conf" />
-        <option value="$PROJECT_DIR$/samples-order/src/main/resources/registry.conf" />
-        <option value="$PROJECT_DIR$/samples-storage/src/main/resources/registry.conf" />
-        <option value="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/ZkClientDemo.java" />
-        <option value="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/SimpleZkClient.java" />
-        <option value="$PROJECT_DIR$/samples-account/src/main/resources/registry.conf" />
-        <option value="$PROJECT_DIR$/samples-business/src/main/resources/kks.conf" />
-        <option value="$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/pss.java" />
-        <option value="$PROJECT_DIR$/samples-business/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/samples-business/src/main/java/a.properties" />
-        <option value="$PROJECT_DIR$/samples-business/src/main/resources/zk_config.properties" />
-        <option value="$PROJECT_DIR$/samples-storage/src/main/resources/file.conf" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/samples-business/src/main/resources/file.conf" />
-        <option value="$PROJECT_DIR$/samples-account/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/samples-account/src/main/resources/file.conf" />
-        <option value="$PROJECT_DIR$/samples-storage/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/samples-order/src/main/resources/file.conf" />
-        <option value="$PROJECT_DIR$/samples-account/src/main/resources/mapper/TAccountMapper.xml" />
-        <option value="$PROJECT_DIR$/samples-order/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/samples-storage/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/config/SeataAutoConfig.java" />
-        <option value="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/config/SeataDataSourceAutoConfig.java" />
-        <option value="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/config/SeataDataSourceAutoConfig.java" />
-        <option value="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/config/SeataDataSourceAutoConfig.java" />
-        <option value="$PROJECT_DIR$/samples-business/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/AccountExampleApplication.java" />
-        <option value="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/OrderExampleApplication.java" />
-        <option value="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/StorageExampleApplication.java" />
-        <option value="$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/ZkDataInit.java" />
-        <option value="$PROJECT_DIR$/samples-business/src/main/resources/zk-config.properties" />
-        <option value="$PROJECT_DIR$/samples-order/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/samples-account/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/samples-account/src/main/resources/MATA-INF.services/io.seata.discovery.registry.RegistryProvider" />
-        <option value="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/ZookeeperRegisterServiceImpl.java" />
-        <option value="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/ZookeeperRegistryProvider.java" />
-        <option value="$PROJECT_DIR$/samples-storage/src/main/resources/mapper/TStorageMapper.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-      </list>
-    </option>
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -519,174 +320,14 @@
         <option name="userSettingsFile" value="E:\tools\apache-maven-3.3.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="springboot-dubbo-seata" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="springboot-dubbo-seata" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="737" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-dubbo-seata-zk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-all:1.1.0" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-all:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="seata-all-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-all:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="seata-all-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="seata" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-all:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="seata-all-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="seata" type="462c0819:PsiDirectoryNode" />
-              <item name="discovery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-all:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="seata-all-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="seata" type="462c0819:PsiDirectoryNode" />
-              <item name="discovery" type="462c0819:PsiDirectoryNode" />
-              <item name="registry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-all:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="seata-all-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="seata" type="462c0819:PsiDirectoryNode" />
-              <item name="discovery" type="462c0819:PsiDirectoryNode" />
-              <item name="registry" type="462c0819:PsiDirectoryNode" />
-              <item name="zk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-all:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="seata-all-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-all:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="seata-all-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-spring-boot-starter:1.1.0" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-spring-boot-starter:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="seata-spring-boot-starter-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-spring-boot-starter:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="seata-spring-boot-starter-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="autoconfigure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-spring-boot-starter:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="seata-spring-boot-starter-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="autoconfigure" type="462c0819:PsiDirectoryNode" />
-              <item name="properties" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-spring-boot-starter:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="seata-spring-boot-starter-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="autoconfigure" type="462c0819:PsiDirectoryNode" />
-              <item name="properties" type="462c0819:PsiDirectoryNode" />
-              <item name="registry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-spring-boot-starter:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="seata-spring-boot-starter-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-spring-boot-starter:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="seata-spring-boot-starter-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="seata-spring-boot-starter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot-dubbo-seata-zk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: io.seata:seata-spring-boot-starter:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="seata-spring-boot-starter-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1jPY1EQx2p2orRqcVk7JFmV30I4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -697,16 +338,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586864056872" />
+    <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.27414903" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/samples-account/src/main/resources/MATA-INF.services" />
-      <recent name="$PROJECT_DIR$/samples-business/src/main/java" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/samples-account/src/main/resources/META-INF/services" />
+      <recent name="D:\springcloud\springboot-dubbo-seata-zk\samples-business\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="io.seata.samples.integration.common" />
@@ -714,24 +359,13 @@
       <recent name="io.seata.samples.integration.order.config" />
       <recent name="io.seata.samples.integration.account.config" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/samples-account/src/main/resources/META-INF/services" />
-      <recent name="D:\springcloud\springboot-dubbo-seata-zk\samples-business\src\main\resources" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\springcloud\springboot-dubbo-seata-zkp\springboot-dubbo-seata-zk" />
+      <recent name="$PROJECT_DIR$/samples-account/src/main/resources/MATA-INF.services" />
+      <recent name="$PROJECT_DIR$/samples-business/src/main/java" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.BusinessExampleApplication">
+  <component name="RunManager" selected="Application.ZkDataInit">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -768,6 +402,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="io.seata.samples.integration.account" />
       <option name="MAIN_CLASS_NAME" value="io.seata.samples.integration.account.SimpleZkClient" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -788,9 +423,11 @@
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -825,6 +462,7 @@
       </method>
     </configuration>
     <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
       <listeners />
@@ -883,6 +521,7 @@
       <workItem from="1586829017016" duration="13971000" />
       <workItem from="1586844634222" duration="3989000" />
       <workItem from="1586863935725" duration="112000" />
+      <workItem from="1603706982039" duration="2352000" />
     </task>
     <servers />
   </component>
@@ -912,69 +551,41 @@
       <configuration name="SimpleZkClient" configurationId="JUnit" />
     </history-entry>
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93670000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="739" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5472441" visible="true" weight="0.25161812" />
-      <window_info id="Structure" order="1" sideWeight="0.4527559" side_tool="true" weight="0.26190478" />
-      <window_info id="Nl-Palette" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Image Layers" order="5" />
-      <window_info id="Web" order="6" sideWeight="0.38303342" side_tool="true" weight="0.2914614" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info id="Persistence" order="9" side_tool="true" />
-      <window_info id="JavaEE:App" order="10" side_tool="true" />
-      <window_info id="Alibaba Cloud Explorer" order="11" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946353" weight="0.32924107" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.83476394" weight="0.5981453" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8927039" weight="0.26584235" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.10729614" side_tool="true" weight="0.32589287" />
-      <window_info anchor="bottom" id="Application Servers" order="8" sideWeight="0.49671593" weight="0.3041096" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49919224" weight="0.38767123" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.53634894" weight="0.24378882" />
-      <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.32881355" />
-      <window_info anchor="bottom" id="Spring" order="13" weight="0.32899022" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32899022" />
-      <window_info anchor="bottom" id="Database Changes" order="15" />
-      <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
-      <window_info anchor="bottom" id="REST Client" order="17" />
-      <window_info anchor="bottom" id="Alibaba Cloud View" order="18" />
-      <window_info anchor="bottom" id="MyBatis Log" order="19" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Properties" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.20689656" />
-      <window_info anchor="right" id="CDI" order="10" />
-      <window_info anchor="right" id="JSF" order="11" />
-      <window_info anchor="right" id="Bean Validation" order="12" />
-      <window_info anchor="right" id="BPMNPalette" order="13" />
-      <window_info anchor="right" id="Maven" order="14" sideWeight="0.49932525" visible="true" weight="0.24029127" />
-      <window_info anchor="right" id="SciView" order="15" />
-      <window_info anchor="right" id="Alibaba Log Console" order="16" />
-      <window_info anchor="right" id="Coverage" order="17" sideWeight="0.5006748" side_tool="true" visible="true" weight="0.14285715" />
-      <window_info anchor="right" id="Mybatis datasource" order="18" side_tool="true" />
-      <window_info anchor="right" id="Alibaba Function Compute" order="19" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="281" y="11" key="#Project_Structure" timestamp="1603768015820">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="281" y="11" key="#Project_Structure/0.0.1858.1080/-1920.0.1920.1080@0.0.1858.1080" timestamp="1603768015820" />
+    <state width="1802" height="290" key="GridCell.Tab.0.bottom" timestamp="1603767844930">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1802" height="290" key="GridCell.Tab.0.bottom/0.0.1858.1080/-1920.0.1920.1080@0.0.1858.1080" timestamp="1603767844930" />
+    <state width="1802" height="290" key="GridCell.Tab.0.center" timestamp="1603767844930">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1802" height="290" key="GridCell.Tab.0.center/0.0.1858.1080/-1920.0.1920.1080@0.0.1858.1080" timestamp="1603767844930" />
+    <state width="1802" height="290" key="GridCell.Tab.0.left" timestamp="1603767844929">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1802" height="290" key="GridCell.Tab.0.left/0.0.1858.1080/-1920.0.1920.1080@0.0.1858.1080" timestamp="1603767844929" />
+    <state width="1802" height="290" key="GridCell.Tab.0.right" timestamp="1603767844930">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1802" height="290" key="GridCell.Tab.0.right/0.0.1858.1080/-1920.0.1920.1080@0.0.1858.1080" timestamp="1603767844930" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -982,55 +593,46 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/dubbo/StorageDubboServiceImpl.java</url>
           <line>28</line>
-          <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$USER_HOME$/apache-maven-3.3.9/repo/io/seata/seata-all/0.8.0/seata-all-0.8.0.jar!/io/seata/config/zk/ZookeeperConfiguration.class</url>
           <line>52</line>
-          <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/SimpleZkClient.java</url>
           <line>121</line>
-          <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/ZkDataInit.java</url>
-          <line>23</line>
-          <properties />
+          <line>27</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/ZkDataInit.java</url>
-          <line>34</line>
-          <properties />
+          <line>39</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/SimpleZkClient.java</url>
           <line>88</line>
-          <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/controller/BusinessController.java</url>
           <line>36</line>
-          <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/service/TStorageServiceImpl.java</url>
           <line>23</line>
-          <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/service/BusinessServiceImpl.java</url>
           <line>41</line>
-          <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
@@ -1043,9 +645,9 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/springboot_dubbo_seata_zk$OrderExampleApplication.ic" NAME="OrderExampleApplication Coverage Results" MODIFIED="1586771402752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/springboot_dubbo_seata_zk$StorageExampleApplication.ic" NAME="StorageExampleApplication Coverage Results" MODIFIED="1586770379654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/springboot_dubbo_seata_zk$BusinessExampleApplication.ic" NAME="BusinessExampleApplication Coverage Results" MODIFIED="1586785065981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/springboot_dubbo_seata_zk$OrderExampleApplication.ic" NAME="OrderExampleApplication Coverage Results" MODIFIED="1586771402752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -1055,396 +657,5 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-spring-boot-starter/1.1.0/seata-spring-boot-starter-1.1.0.jar!/io/seata/spring/boot/autoconfigure/provider/SpringApplicationContextProvider.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-spring-boot-starter/1.1.0/seata-spring-boot-starter-1.1.0.jar!/io/seata/spring/boot/autoconfigure/provider/SpringBootConfigurationProvider.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/io/seata/core/rpc/netty/NettyClientChannelManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/io/seata/config/ConfigurationFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/io/seata/discovery/registry/nacos/NacosRegistryProvider.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/io/seata/discovery/registry/nacos/NacosRegistryServiceImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="200" column="55" selection-start-line="200" selection-start-column="55" selection-end-line="200" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/META-INF/services/io.seata.discovery.loadbalance.LoadBalance">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-784" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-spring-boot-starter/1.1.0/seata-spring-boot-starter-1.1.0.jar!/META-INF/services/io.seata.config.ExtConfigurationProvider">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-spring-boot-starter/1.1.0/seata-spring-boot-starter-1.1.0.jar!/io/seata/spring/boot/autoconfigure/SeataAutoConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-spring-boot-starter/1.1.0/seata-spring-boot-starter-1.1.0.jar!/META-INF/spring.factories">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="108" selection-start-line="1" selection-start-column="108" selection-end-line="1" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-account/target/classes/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="104" column="15" selection-start-line="104" selection-start-column="15" selection-end-line="104" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-account/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="89" column="10" selection-start-line="89" selection-start-column="2" selection-end-line="89" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/io/seata/discovery/registry/RegistryProvider.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-account/src/main/resources/META-INF/services/io.seata.discovery.registry.RegistryProvider">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="45" selection-start-column="45" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/io/seata/discovery/registry/zk/ZookeeperRegisterServiceImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3587">
-          <caret line="182" selection-start-line="182" selection-end-line="182" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/io/seata/discovery/registry/zk/ZookeeperRegistryProvider.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/META-INF/services/io.seata.discovery.registry.RegistryProvider">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/io/seata/discovery/registry/RegistryType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/META-INF/services/io.seata.core.model.ResourceManager">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-account/target/classes/META-INF/services/io.seata.discovery.registry.RegistryProvider">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="41" selection-start-column="41" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-business/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/entity/TStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/BusinessExampleApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="45" />
-          <folding>
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-order/src/main/resources/mapper/TOrderMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-392" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/db_seata.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
-          <caret line="67" column="68" selection-start-line="20" selection-end-line="67" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/ZookeeperRegisterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/aop/GlobalExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dto/AccountDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/ZookeeperRegistryProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-business/src/main/resources/zk-config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/service/BusinessService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-spring-boot-starter/1.1.0/seata-spring-boot-starter-1.1.0.jar!/io/seata/spring/boot/autoconfigure/properties/registry/RegistryZooKeeperProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/service/BusinessServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="47" column="66" lean-forward="true" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/dubbo/StorageDubboService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/service/ITStorageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/dubbo/StorageDubboServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/service/TStorageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/mapper/TStorageMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE.jar!/org/springframework/beans/factory/support/BeanDefinitionRegistry.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-storage/src/main/resources/mapper/TStorageMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/StorageExampleApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/AccountExampleApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="21" selection-start-line="11" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/io/seata/spring/annotation/datasource/EnableAutoDataSourceProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.7.RELEASE/spring-beans-5.1.7.RELEASE.jar!/org/springframework/beans/factory/support/BeanDefinitionBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/OrderExampleApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-business/src/main/java/io/seata/samples/integration/call/controller/BusinessController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/config/SeataDataSourceAutoConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="60" column="31" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/io/seata/rm/datasource/DataSourceProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-all/1.1.0/seata-all-1.1.0.jar!/io/seata/spring/annotation/datasource/AutoDataSourceProxyRegistrar.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samples-storage/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="174" column="17" selection-start-line="174" selection-start-column="17" selection-end-line="174" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

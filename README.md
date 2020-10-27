@@ -1,6 +1,6 @@
 面我已经写过一篇[SpringBoot+Nacos+Seata实现Dubbo分布式事务管理](https://blog.csdn.net/u010046908/article/details/100536439)的文章，今天为什么还要写这篇呢，是因为好多公司还在用`Zookeeper`作为`Dubbo`的注册中心和配置中心在大规模使用，还没有完全迁移到`Nacos`上来，所以`Seata`的注册中心和配置也是支持`Zookeeper`，但是官方没有完整的使用教程，因此，写这篇主要为了帮助使用`Zookeeper`的用户也可以轻松使用`Seata`。
 ## 1.简介
->本文主要介绍SpringBoot2.1.5 + Dubbo 2.7.3 + Mybatis 3.4.2 + Zookeeper 3.4.14 +Seata 0.9.0整合来实现Dubbo分布式事务管理，使用Zookeeper 作为 Dubbo和Seata的注册中心和配置中心,使用 MySQL 数据库和 MyBatis来操作数据。
+>本文主要介绍SpringBoot2.1.5 + Dubbo 2.7.3 + Mybatis 3.4.2 + Zookeeper 3.4.14 +Seata 1.3.0整合来实现Dubbo分布式事务管理，使用Zookeeper 作为 Dubbo和Seata的注册中心和配置中心,使用 MySQL 数据库和 MyBatis来操作数据。
 
 如果你还对`SpringBoot`、`Dubbo`、`Zookeeper`、`Seata`、` Mybatis` 不是很了解的话，这里我为大家整理个它们的官网网站，如下
 
@@ -56,7 +56,7 @@ bin/zkServer.cmd start
 我们可以使客户端去来连接
 
 ```shell
-bin/zkCli.cmd 
+bin/zkCli.cmd
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191021104720936.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9saWRvbmcxNjY1LmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)
 ## ZooKeeper -server host:port cmd args
@@ -90,9 +90,9 @@ ls /
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191021104916700.png)
 默认有一个`zookeeoer`节点。
-## 2.2 下载seata0.9.0 并安装启动
+## 2.2 下载seata1.3.0 并安装启动
 
-#### 2.2.1 在 [Seata Release](https://github.com/seata/seata/releases/tag/v0.9.0) 下载最新版的 Seata Server 并解压得到如下目录：
+#### 2.2.1 在 [Seata Release](https://github.com/seata/seata/releases/tag/v1.3.0) 下载最新版的 Seata Server 并解压得到如下目录：
 ```shell
 .
 ├──bin
@@ -137,65 +137,12 @@ config {
 ```
 - serverAddr = "127.0.0.1:2181"   ：zk 的地址
 - cluster = "default"  ：集群设置为默认 `default`
--  session.timeout = 6000 ：会话的超时时间
- - connect.timeout = 2000：连接的超时时间
+- session.timeout = 6000 ：会话的超时时间
+- connect.timeout = 2000：连接的超时时间
 
 file.conf 配置
 
 ```bash
-transport {
-  # tcp udt unix-domain-socket
-  type = "TCP"
-  #NIO NATIVE
-  server = "NIO"
-  #enable heartbeat
-  heartbeat = true
-  #thread factory for netty
-  thread-factory {
-    boss-thread-prefix = "NettyBoss"
-    worker-thread-prefix = "NettyServerNIOWorker"
-    server-executor-thread-prefix = "NettyServerBizHandler"
-    share-boss-worker = false
-    client-selector-thread-prefix = "NettyClientSelector"
-    client-selector-thread-size = 1
-    client-worker-thread-prefix = "NettyClientWorkerThread"
-    # netty boss thread size,will not be used for UDT
-    boss-thread-size = 1
-    #auto default pin or 8
-    worker-thread-size = 8
-  }
-  shutdown {
-    # when destroy server, wait seconds
-    wait = 3
-  }
-  serialization = "seata"
-  compressor = "none"
-}
-service {
-  #vgroup->rgroup
-  vgroup_mapping.my_test_tx_group = "default"
-  #only support single node
-  default.grouplist = "127.0.0.1:8091"
-  #degrade current not support
-  enableDegrade = false
-  #disable
-  disable = false
-  #unit ms,s,m,h,d represents milliseconds, seconds, minutes, hours, days, default permanent
-  max.commit.retry.timeout = "-1"
-  max.rollback.retry.timeout = "-1"
-}
-
-client {
-  async.commit.buffer.limit = 10000
-  lock {
-    retry.internal = 10
-    retry.times = 30
-  }
-  report.retry.count = 5
-  tm.commit.retry.count = 1
-  tm.rollback.retry.count = 1
-}
-
 ## transaction log store
 store {
   ## store mode: file、db
@@ -220,7 +167,7 @@ store {
   ## database store
   db {
     ## the implement of javax.sql.DataSource, such as DruidDataSource(druid)/BasicDataSource(dbcp) etc.
-    datasource = "dbcp"
+    datasource = "druid"
     ## mysql/oracle/h2/oceanbase etc.
     db-type = "mysql"
     driver-class-name = "com.mysql.jdbc.Driver"
@@ -235,54 +182,6 @@ store {
     query-limit = 100
   }
 }
-lock {
-  ## the lock store mode: local、remote
-  mode = "remote"
-
-  local {
-    ## store locks in user's database
-  }
-
-  remote {
-    ## store locks in the seata's server
-  }
-}
-recovery {
-  #schedule committing retry period in milliseconds
-  committing-retry-period = 1000
-  #schedule asyn committing retry period in milliseconds
-  asyn-committing-retry-period = 1000
-  #schedule rollbacking retry period in milliseconds
-  rollbacking-retry-period = 1000
-  #schedule timeout retry period in milliseconds
-  timeout-retry-period = 1000
-}
-
-transaction {
-  undo.data.validation = true
-  undo.log.serialization = "jackson"
-  undo.log.save.days = 7
-  #schedule delete expired undo_log in milliseconds
-  undo.log.delete.period = 86400000
-  undo.log.table = "undo_log"
-}
-
-## metrics settings
-metrics {
-  enabled = false
-  registry-type = "compact"
-  # multi exporters use comma divided
-  exporter-list = "prometheus"
-  exporter-prometheus-port = 9898
-}
-
-support {
-  ## spring
-  spring {
-    # auto proxy the DataSource bean
-    datasource.autoproxy = false
-  }
-}
 ```
 主要修改了`store.mode`为`db`,还有数据库相关的配置
 
@@ -290,66 +189,23 @@ support {
 #### 2.2.3 修改 conf/nacos-config.txt配置为zk-config.properties
 
 ```shell
-transport.type=TCP
-transport.server=NIO
-transport.heartbeat=true
-transport.thread-factory.boss-thread-prefix=NettyBoss
-transport.thread-factory.worker-thread-prefix=NettyServerNIOWorker
-transport.thread-factory.server-executor-thread-prefix=NettyServerBizHandler
-transport.thread-factory.share-boss-worker=false
-transport.thread-factory.client-selector-thread-prefix=NettyClientSelector
-transport.thread-factory.client-selector-thread-size=1
-transport.thread-factory.client-worker-thread-prefix=NettyClientWorkerThread
-transport.thread-factory.boss-thread-size=1
-transport.thread-factory.worker-thread-size=8
-transport.shutdown.wait=3
-service.vgroup_mapping.order-service-seata-service-group=default
-service.vgroup_mapping.account-service-seata-service-group=default
-service.vgroup_mapping.storage-service-seata-service-group=default
-service.vgroup_mapping.business-service-seata-service-group=default
-service.enableDegrade=false
-service.disable=false
-service.max.commit.retry.timeout=-1
-service.max.rollback.retry.timeout=-1
-client.async.commit.buffer.limit=10000
-client.lock.retry.internal=10
-client.lock.retry.times=30
+service.vgroupMapping.order-service-seata-service-group=default
+service.vgroupMapping.account-service-seata-service-group=default
+service.vgroupMapping.storage-service-seata-service-group=default
+service.vgroupMapping.business-service-seata-service-group=default
 store.mode=db
-store.file.dir=file_store/data
-store.file.max-branch-session-size=16384
-store.file.max-global-session-size=512
-store.file.file-write-buffer-cache-size=16384
-store.file.flush-disk-mode=async
-store.file.session.reload.read_size=100
-store.db.driver-class-name=com.mysql.jdbc.Driver
 store.db.datasource=dbcp
-store.db.db-type=mysql
+store.db.dbType=mysql
+store.db.driverClassName=com.mysql.jdbc.Driver
 store.db.url=jdbc:mysql://127.0.0.1:3306/seata?useUnicode=true
 store.db.user=root
 store.db.password=123456
-store.db.min-conn=1
-store.db.max-conn=3
-store.db.global.table=global_table
-store.db.branch.table=branch_table
-store.db.query-limit=100
-store.db.lock-table=lock_table
-recovery.committing-retry-period=1000
-recovery.asyn-committing-retry-period=1000
-recovery.rollbacking-retry-period=1000
-recovery.timeout-retry-period=1000
-transaction.undo.data.validation=true
-transaction.undo.log.serialization=jackson
-transaction.undo.log.save.days=7
-transaction.undo.log.delete.period=86400000
-transaction.undo.log.table=undo_log
-transport.serialization=seata
-transport.compressor=none
-metrics.enabled=false
-metrics.registry-type=compact
-metrics.exporter-list=prometheus
-metrics.exporter-prometheus-port=9898
-client.report.retry.count=5
-service.disableGlobalTransaction=false
+store.db.minConn=1
+store.db.maxConn=3
+store.db.globalTable=global_table
+store.db.branchTable=branch_table
+store.db.queryLimit=100
+store.db.lockTable=lock_table
 ```
 这里主要修改了如下几项：
 - store.mode :存储模式 默认file  这里我修改为db 模式 ，并且需要三个表`global_table`、`branch_table`和`lock_table`
@@ -359,10 +215,10 @@ service.disableGlobalTransaction=false
 - store.db.url=jdbc:mysql://127.0.0.1:3306/seata?useUnicode=true : 修改为自己的数据库`url`、`port`、`数据库名称`
 - store.db.user=root :数据库的账号
 - store.db.password=123456 :数据库的密码
-- service.vgroup_mapping.order-service-seata-service-group=default
-- service.vgroup_mapping.account-service-seata-service-group=default
-- service.vgroup_mapping.storage-service-seata-service-group=default
-- service.vgroup_mapping.business-service-seata-service-group=default
+- service.vgroupMapping.order-service-seata-service-group=default
+- service.vgroupMapping.account-service-seata-service-group=default
+- service.vgroupMapping.storage-service-seata-service-group=default
+- service.vgroupMapping.business-service-seata-service-group=default
 
 ***db模式下的所需的三个表的数据库脚本位于`seata\conf\db_store.sql`***
 
@@ -430,51 +286,57 @@ create table `lock_table` (
 #### 2.2.4 将 Seata 配置添加到 Zookeeper 中
 用于官方只提供了nacos的脚本配置。我这用java实现了将 Seata 配置添加到 Zookeeper 中。
 我这里参考了`ZookeeperConfiguration`的源码实现的导入到zk的初始化代码。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191021121251985.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9saWRvbmcxNjY1LmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)
+![](./zk-image.png)
 通过查看以上源代码我们可以看出
 zk模式下数据的存储格式。并且使用的zk的永久节点存储。
 
-###### 2.4.2.1.创建根节点，其中根节点为`/config`
+###### 2.4.2.1.创建根节点，其中根节点为`/seata`
 
 ```java
 public ZookeeperConfiguration() {
         if (zkClient == null) {
-            Class var1 = ZookeeperConfiguration.class;
-            synchronized(ZookeeperConfiguration.class) {
-                if (null == zkClient) {
-                    zkClient = new ZkClient(FILE_CONFIG.getConfig("config.zk.serverAddr"), FILE_CONFIG.getInt("config.zk.session.timeout", 6000), FILE_CONFIG.getInt("config.zk.connect.timeout", 2000));
+            synchronized (ZookeeperConfiguration.class) {
+                if (zkClient == null) {
+                    ZkSerializer zkSerializer = getZkSerializer();
+                    String serverAddr = FILE_CONFIG.getConfig(FILE_CONFIG_KEY_PREFIX + SERVER_ADDR_KEY);
+                    int sessionTimeout = FILE_CONFIG.getInt(FILE_CONFIG_KEY_PREFIX + SESSION_TIMEOUT_KEY, DEFAULT_SESSION_TIMEOUT);
+                    int connectTimeout = FILE_CONFIG.getInt(FILE_CONFIG_KEY_PREFIX + CONNECT_TIMEOUT_KEY, DEFAULT_CONNECT_TIMEOUT);
+                    zkClient = new ZkClient(serverAddr, sessionTimeout, connectTimeout, zkSerializer);
+                    String username = FILE_CONFIG.getConfig(FILE_CONFIG_KEY_PREFIX + AUTH_USERNAME);
+                    String password = FILE_CONFIG.getConfig(FILE_CONFIG_KEY_PREFIX + AUTH_PASSWORD);
+                    if (!StringUtils.isBlank(username) && !StringUtils.isBlank(password)) {
+                        StringBuilder auth = new StringBuilder(username).append(":").append(password);
+                        zkClient.addAuthInfo("digest", auth.toString().getBytes());
+                    }
                 }
             }
-
-            if (!zkClient.exists("/config")) {
-                zkClient.createPersistent("/config", true);
+            if (!zkClient.exists(ROOT_PATH)) {
+                zkClient.createPersistent(ROOT_PATH, true);
             }
         }
-
     }
 ```
+
+注意：1.3.0 加入了ZkSerializer序列化。
 ###### 2.4.2.2添加配置的方法
 
 ```java
-public boolean putConfig(final String dataId, final String content, long timeoutMills) {
-        FutureTask<Boolean> future = new FutureTask(new Callable<Boolean>() {
-            public Boolean call() throws Exception {
-                String path = "/config/" + dataId;
-                if (!ZookeeperConfiguration.zkClient.exists(path)) {
-                    ZookeeperConfiguration.zkClient.create(path, content, CreateMode.PERSISTENT);
-                } else {
-                    ZookeeperConfiguration.zkClient.writeData(path, content);
-                }
-
-                return true;
+public boolean putConfig(String dataId, String content, long timeoutMills) {
+        FutureTask<Boolean> future = new FutureTask<>(() -> {
+            String path = ROOT_PATH + ZK_PATH_SPLIT_CHAR + dataId;
+            if (!zkClient.exists(path)) {
+                zkClient.create(path, content, CreateMode.PERSISTENT);
+            } else {
+                zkClient.writeData(path, content);
             }
+            return true;
         });
         CONFIG_EXECUTOR.execute(future);
-
         try {
-            return (Boolean)future.get(timeoutMills, TimeUnit.MILLISECONDS);
-        } catch (Exception var7) {
-            LOGGER.warn("putConfig {} : {} is error or timeout", dataId, content);
+            return future.get(timeoutMills, TimeUnit.MILLISECONDS);
+        } catch (Exception e) {
+            LOGGER.error("putConfig {}, value: {} is error or timeout, exception: {}",
+                    dataId, content, e.getMessage());
             return false;
         }
     }
@@ -485,8 +347,11 @@ public boolean putConfig(final String dataId, final String content, long timeout
 ```java
 package io.seata.samples.integration.call;
 
+import io.seata.config.zk.DefaultZkSerializer;
 import lombok.extern.slf4j.Slf4j;
 import org.I0Itec.zkclient.ZkClient;
+import org.I0Itec.zkclient.exception.ZkMarshallingError;
+import org.I0Itec.zkclient.serialize.ZkSerializer;
 import org.apache.zookeeper.CreateMode;
 import org.springframework.util.ResourceUtils;
 
@@ -498,7 +363,7 @@ import java.util.Properties;
 import java.util.Set;
 
 /**
- * 
+ *
  */
 @Slf4j
 public class ZkDataInit {
@@ -506,11 +371,13 @@ public class ZkDataInit {
     private static volatile ZkClient zkClient;
 
     public static void main(String[] args) {
+
         if (zkClient == null) {
-            zkClient = new ZkClient("127.0.0.1:2181", 6000, 2000);
+            ZkSerializer zkSerializer = new DefaultZkSerializer();
+            zkClient = new ZkClient("127.0.0.1:2181", 6000, 2000, zkSerializer);
         }
-        if (!zkClient.exists("/config")) {
-            zkClient.createPersistent("/config", true);
+        if (!zkClient.exists("/seata")) {
+            zkClient.createPersistent("/seata", true);
         }
         //获取key对应的value值
         Properties properties = new Properties();
@@ -538,7 +405,7 @@ public class ZkDataInit {
      */
     public static boolean putConfig(final String dataId, final String content) {
         Boolean flag = false;
-        String path = "/config/" + dataId;
+        String path = "/seata/" + dataId;
         if (!zkClient.exists(path)) {
             zkClient.create(path, content, CreateMode.PERSISTENT);
             flag = true;
@@ -555,31 +422,39 @@ public class ZkDataInit {
 ###### 2.4.2.4 查看zk的节点结构
 
 ```shell
-[zk: localhost:2181(CONNECTED) 3] ls /config
-[metrics.exporter-prometheus-port, store.file.session.reload.read_size, recovery
-.committing-retry-period, store.db.lock-table, store.db.datasource, transport.th
-read-factory.client-selector-thread-prefix, transaction.undo.log.save.days, metr
-ics.exporter-list, transport.server, client.async.commit.buffer.limit, store.fil
-e.max-branch-session-size, transport.thread-factory.client-selector-thread-size,
- transaction.undo.log.delete.period, transaction.undo.data.validation, service.d
-isableGlobalTransaction, transport.thread-factory.boss-thread-size, client.lock.
-retry.times, service.max.commit.retry.timeout, store.db.driver-class-name, store
-.file.flush-disk-mode, transport.thread-factory.worker-thread-size, store.mode,
-transport.serialization, transport.thread-factory.client-worker-thread-prefix, s
-tore.file.dir, recovery.rollbacking-retry-period, store.db.query-limit, transpor
-t.compressor, store.db.url, store.db.user, recovery.timeout-retry-period, servic
-e.disable, store.db.db-type, client.report.retry.count, store.file.file-write-bu
-ffer-cache-size, transaction.undo.log.table, client.lock.retry.internal, transac
-tion.undo.log.serialization, recovery.asyn-committing-retry-period, metrics.enab
-led, store.db.password, transport.thread-factory.worker-thread-prefix, transport
-.thread-factory.boss-thread-prefix, service.vgroup_mapping.storage-service-seata
--service-group, service.vgroup_mapping.order-service-seata-service-group, store.
-db.global.table, store.db.branch.table, service.vgroup_mapping.account-service-s
-eata-service-group, service.vgroup_mapping.business-service-seata-service-group,
- service.max.rollback.retry.timeout, service.enableDegrade, store.file.max-globa
-l-session-size, transport.type, store.db.max-conn, transport.thread-factory.shar
-e-boss-worker, transport.thread-factory.server-executor-thread-prefix, metrics.r
-egistry-type, transport.heartbeat, transport.shutdown.wait, store.db.min-conn]
+[zk: localhost:2181(CONNECTED) 10] ls /seata
+[transport.threadFactory.clientSelectorThreadSize, transport.threadFactory.serve
+rExecutorThreadPrefix, store.db.minConn, store.file.maxBranchSessionSize, client
+.undo.logTable, transport.threadFactory.clientSelectorThreadPrefix, server.recov
+ery.rollbackingRetryPeriod, store.db.datasource, transport.server, client.rm.rep
+ortSuccessEnable, transport.enableClientBatchSendRequest, client.rm.lock.retryIn
+terval, client.tm.commitRetryCount, client.undo.onlyCareUpdateColumns, store.db.
+globalTable, store.redis.password, client.rm.lock.retryTimes, store.db.dbType, s
+ervice.disableGlobalTransaction, server.recovery.timeoutRetryPeriod, service.vgr
+oupMapping.manage-service-seata-service-group, transport.threadFactory.bossThrea
+dSize, store.redis.queryLimit, store.file.maxGlobalSessionSize, store.db.maxConn
+, server.recovery.committingRetryPeriod, store.db.queryLimit, store.mode, transp
+ort.serialization, store.file.dir, transport.threadFactory.clientWorkerThreadPre
+fix, client.rm.tableMetaCheckEnable, store.db.branchTable, transport.compressor,
+ store.db.user, store.db.url, transport.threadFactory.workerThreadSize, transpor
+t.threadFactory.bossThreadPrefix, client.rm.reportRetryCount, store.db.driverCla
+ssName, client.tm.degradeCheckAllowTimes, service.default.grouplist, server.maxR
+ollbackRetryTimeout, client.tm.rollbackRetryCount, client.undo.logSerialization,
+ metrics.exporterList, service.vgroupMapping.sales-service-seata-service-group,
+store.file.flushDiskMode, metrics.enabled, client.rm.asyncCommitBufferLimit, sto
+re.db.password, store.file.sessionReloadReadSize, metrics.exporterPrometheusPort
+, server.rollbackRetryTimeoutUnlockEnable, client.tm.degradeCheck, store.redis.d
+atabase, store.redis.host, client.undo.dataValidation, client.rm.lock.retryPolic
+yBranchRollbackOnConflict, server.recovery.asynCommittingRetryPeriod, metrics.re
+gistryType, client.log.exceptionRate, transport.threadFactory.shareBossWorker, c
+lient.rm.sqlParserType, service.enableDegrade, transport.threadFactory.workerThr
+eadPrefix, transport.type, service.vgroupMapping.infoManage-service-seata-servic
+e-group, server.maxCommitRetryTimeout, transport.heartbeat, store.db.lockTable,
+server.undo.logSaveDays, server.undo.logDeletePeriod, client.rm.sagaBranchRegist
+erEnable, store.redis.port, store.db.maxWait, store.redis.minConn, transport.shu
+tdown.wait, store.redis.maxConn, store.file.fileWriteBufferCacheSize, client.tm.
+degradeCheckPeriod]
+
 ```
 所有的配置都已经导入成功。
 
@@ -596,7 +471,7 @@ bin/seata-server.bat -m db
 
 ```shell
 [zk: localhost:2181(CONNECTED) 4] ls /
-registry    zookeeper   config
+registry    zookeeper   seata
 [zk: localhost:2181(CONNECTED) 4] ls /registry/zk/default
 [192.168.10.108:8091]
 ```
@@ -675,7 +550,7 @@ public interface StorageDubboService {
 
 ```
 
-#### 3.5 业务服务：BusinessService 
+#### 3.5 业务服务：BusinessService
 
 ```java
 
@@ -804,13 +679,13 @@ public class BusinessServiceImpl implements BusinessService{
 ## 3.6 使用seata的分布式事务解决方案处理dubbo的分布式事务
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190905113350848.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9saWRvbmcxNjY1LmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)
 
-我们只需要在业务处理的方法`handleBusiness`添加一个注解 `@GlobalTransactional` 
+我们只需要在业务处理的方法`handleBusiness`添加一个注解 `@GlobalTransactional`
 
 ```java
 @GlobalTransactional(timeoutMills = 300000, name = "dubbo-gts-seata-example")
     @Override
     public ObjectResponse handleBusiness(BusinessDTO businessDTO) {
-    
+
     }
 ```
 - `timeoutMills`: 超时时间
@@ -1122,9 +997,9 @@ SET FOREIGN_KEY_CHECKS=1;
 - `dubbo-spring-boot-starter`:   springboot dubbo的依赖。
 
 其他的就不一一介绍，其他的一目了然，就知道是干什么的。
-  
+
  ### 3.8.2  application.properties配置
- 
+
 
 ```properties
 server.port=8102
@@ -1373,7 +1248,7 @@ public class AccountExampleApplication {
 
 ## 5 测试
 ### 5. 1 发送一个下单请求
-使用postman 发送 ：[http://localhost:8104/business/dubbo/buy](http://localhost:8104/business/dubbo/buy) 
+使用postman 发送 ：[http://localhost:8104/business/dubbo/buy](http://localhost:8104/business/dubbo/buy)
 
 参数：
 
@@ -1413,7 +1288,7 @@ public class AccountExampleApplication {
 
 我们来看一下数据库数据变化
 
-t_account 
+t_account
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190905122211274.png)
 t_order
 
@@ -1431,7 +1306,7 @@ if (!flag) {
   throw new RuntimeException("测试抛异常后，分布式事务回滚！");
 }
 ```
-使用postman 发送 ：[http://localhost:8104/business/dubbo/buy2](http://localhost:8104/business/dubbo/buy2) 
+使用postman 发送 ：[http://localhost:8104/business/dubbo/buy2](http://localhost:8104/business/dubbo/buy2)
 
 .响应结果：
 

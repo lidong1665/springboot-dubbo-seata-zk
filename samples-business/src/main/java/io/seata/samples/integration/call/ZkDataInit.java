@@ -1,7 +1,10 @@
 package io.seata.samples.integration.call;
 
+import io.seata.config.zk.DefaultZkSerializer;
 import lombok.extern.slf4j.Slf4j;
 import org.I0Itec.zkclient.ZkClient;
+import org.I0Itec.zkclient.exception.ZkMarshallingError;
+import org.I0Itec.zkclient.serialize.ZkSerializer;
 import org.apache.zookeeper.CreateMode;
 import org.springframework.util.ResourceUtils;
 
@@ -21,8 +24,10 @@ public class ZkDataInit {
     private static volatile ZkClient zkClient;
 
     public static void main(String[] args) {
+
         if (zkClient == null) {
-            zkClient = new ZkClient("127.0.0.1:2181", 6000, 2000);
+            ZkSerializer zkSerializer = new DefaultZkSerializer();
+            zkClient = new ZkClient("127.0.0.1:2181", 6000, 2000, zkSerializer);
         }
         if (!zkClient.exists("/seata")) {
             zkClient.createPersistent("/seata", true);

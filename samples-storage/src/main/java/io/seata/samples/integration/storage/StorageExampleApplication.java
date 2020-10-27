@@ -10,7 +10,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(scanBasePackages = "io.seata.samples.integration.storage")
 @MapperScan({"io.seata.samples.integration.storage.mapper"})
 @EnableDubbo(scanBasePackages = "io.seata.samples.integration.storage")
-@EnableAutoDataSourceProxy
 public class StorageExampleApplication {
 
     public static void main(String[] args) {
