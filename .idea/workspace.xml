@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -33,35 +36,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4aa52b9c-a3bf-4ba7-a4c0-324bcd7288eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/AccountExampleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/src/main/java/io/seata/samples/integration/account/AccountExampleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-account/src/main/resources/META-INF/services/io.seata.discovery.registry.RegistryProvider" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/target/classes/META-INF/services/io.seata.discovery.registry.RegistryProvider" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/target/classes/io/seata/samples/integration/call/BusinessExampleApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/target/classes/io/seata/samples/integration/call/ZkDataInit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/target/classes/io/seata/samples/integration/call/controller/BusinessController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/target/classes/io/seata/samples/integration/call/service/BusinessService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/target/classes/io/seata/samples/integration/call/service/BusinessServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-business/target/classes/zk-config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/target/classes/io/seata/samples/integration/common/ZookeeperRegisterServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/target/classes/io/seata/samples/integration/common/ZookeeperRegisterServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/target/classes/io/seata/samples/integration/common/ZookeeperRegistryProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/target/classes/io/seata/samples/integration/common/aop/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/target/classes/io/seata/samples/integration/common/dto/AccountDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/target/classes/io/seata/samples/integration/common/dto/BusinessDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/target/classes/io/seata/samples/integration/common/dto/CommodityDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/target/classes/io/seata/samples/integration/common/dto/OrderDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/target/classes/io/seata/samples/integration/common/dubbo/AccountDubboService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/target/classes/io/seata/samples/integration/common/dubbo/OrderDubboService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/target/classes/io/seata/samples/integration/common/dubbo/StorageDubboService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/target/classes/io/seata/samples/integration/common/enums/RspStatusEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/target/classes/io/seata/samples/integration/common/exception/DefaultException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/target/classes/io/seata/samples/integration/common/response/BaseResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-common/target/classes/io/seata/samples/integration/common/response/ObjectResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/OrderExampleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/src/main/java/io/seata/samples/integration/order/OrderExampleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-order/src/main/resources/META-INF/services/io.seata.discovery.registry.RegistryProvider" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/StorageExampleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/src/main/java/io/seata/samples/integration/storage/StorageExampleApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/resources/META-INF/services/io.seata.discovery.registry.RegistryProvider" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_seata_seata_all_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_60.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_73.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_seata_seata_all_1_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_seata_seata_spring_boot_starter_1_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_seata_seata_spring_boot_starter_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples-account/samples-account.iml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/samples-account.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples-account/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-account/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples-business/samples-business.iml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-business/samples-business.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples-business/src/main/resources/META-INF/services/io.seata.discovery.registry.RegistryProvider" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples-business/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-business/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples-common/samples-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/samples-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/aop/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples-common/src/main/java/io/seata/samples/integration/common/aop/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples-order/samples-order.iml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/samples-order.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples-order/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-order/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples-storage/samples-storage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/samples-storage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples-storage/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/samples-storage/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-dubbo-seata-zk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-dubbo-seata-zk.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,10 +124,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="3b40750d-4d24-4875-ac30-40338c5b704c" />
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="E:/tools/apache-maven-3.3.3" />
+        <option name="mavenHome" value="E:\tools\apache-maven-3.3.3" />
         <option name="userSettingsFile" value="E:\tools\apache-maven-3.3.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -153,6 +146,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -211,6 +205,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SimpleZkClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="samples-account" />
       <extension name="coverage">
@@ -242,7 +247,6 @@
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -306,6 +310,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
   </component>
@@ -341,6 +346,7 @@
       <workItem from="1586844634222" duration="3989000" />
       <workItem from="1586863935725" duration="112000" />
       <workItem from="1603706982039" duration="3083000" />
+      <workItem from="1608086370126" duration="180000" />
     </task>
     <servers />
   </component>
@@ -371,7 +377,7 @@
     </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -383,6 +389,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="281" y="11" key="#Project_Structure" timestamp="1603768015820">
@@ -464,8 +471,8 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/springboot_dubbo_seata_zk$OrderExampleApplication.ic" NAME="OrderExampleApplication Coverage Results" MODIFIED="1586771402752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/springboot_dubbo_seata_zk$StorageExampleApplication.ic" NAME="StorageExampleApplication Coverage Results" MODIFIED="1586770379654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/springboot_dubbo_seata_zk$OrderExampleApplication.ic" NAME="OrderExampleApplication Coverage Results" MODIFIED="1586771402752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/springboot_dubbo_seata_zk$BusinessExampleApplication.ic" NAME="BusinessExampleApplication Coverage Results" MODIFIED="1586785065981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="debuggerHistoryManager">

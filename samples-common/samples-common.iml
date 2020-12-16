@@ -122,9 +122,9 @@
     <orderEntry type="library" name="Maven: de.ruedigermoeller:fst:2.48-jdk-6" level="project" />
     <orderEntry type="library" name="Maven: com.cedarsoftware:java-util:1.9.0" level="project" />
     <orderEntry type="library" name="Maven: com.cedarsoftware:json-io:2.5.1" level="project" />
-    <orderEntry type="library" name="Maven: io.seata:seata-spring-boot-starter:1.3.0" level="project" />
-    <orderEntry type="library" name="Maven: io.seata:seata-all:1.3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.60" level="project" />
+    <orderEntry type="library" name="Maven: io.seata:seata-spring-boot-starter:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: io.seata:seata-all:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.73" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe:config:1.2.1" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.6.2" level="project" />

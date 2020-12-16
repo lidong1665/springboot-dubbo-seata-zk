@@ -1,6 +1,6 @@
 面我已经写过一篇[SpringBoot+Nacos+Seata实现Dubbo分布式事务管理](https://blog.csdn.net/u010046908/article/details/100536439)的文章，今天为什么还要写这篇呢，是因为好多公司还在用`Zookeeper`作为`Dubbo`的注册中心和配置中心在大规模使用，还没有完全迁移到`Nacos`上来，所以`Seata`的注册中心和配置也是支持`Zookeeper`，但是官方没有完整的使用教程，因此，写这篇主要为了帮助使用`Zookeeper`的用户也可以轻松使用`Seata`。
 ## 1.简介
->本文主要介绍SpringBoot2.1.5 + Dubbo 2.7.3 + Mybatis 3.4.2 + Zookeeper 3.4.14 +Seata 1.3.0整合来实现Dubbo分布式事务管理，使用Zookeeper 作为 Dubbo和Seata的注册中心和配置中心,使用 MySQL 数据库和 MyBatis来操作数据。
+>本文主要介绍SpringBoot2.1.5 + Dubbo 2.7.3 + Mybatis 3.4.2 + Zookeeper 3.4.14 +Seata 1.4.0整合来实现Dubbo分布式事务管理，使用Zookeeper 作为 Dubbo和Seata的注册中心和配置中心,使用 MySQL 数据库和 MyBatis来操作数据。
 
 如果你还对`SpringBoot`、`Dubbo`、`Zookeeper`、`Seata`、` Mybatis` 不是很了解的话，这里我为大家整理个它们的官网网站，如下
 
@@ -90,9 +90,9 @@ ls /
 ```
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191021104916700.png)
 默认有一个`zookeeoer`节点。
-## 2.2 下载seata1.3.0 并安装启动
+## 2.2 下载seata1.4.0 并安装启动
 
-#### 2.2.1 在 [Seata Release](https://github.com/seata/seata/releases/tag/v1.3.0) 下载最新版的 Seata Server 并解压得到如下目录：
+#### 2.2.1 在 [Seata Release](https://github.com/seata/seata/releases/tag/v1.4.0) 下载最新版的 Seata Server 并解压得到如下目录：
 ```shell
 .
 ├──bin

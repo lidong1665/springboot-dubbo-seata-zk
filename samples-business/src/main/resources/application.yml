@@ -34,8 +34,6 @@ seata:
       session-timeout: 6000
       cluster: default
   config:
-    file:
-      name: file.conf
     type: zk
     zk:
       server-addr: 127.0.0.1:2181
@@ -43,3 +41,4 @@ seata:
       session-timeout: 6000
   enable-auto-data-source-proxy: true
   use-jdk-proxy: false
+  data-source-proxy-mode: AT

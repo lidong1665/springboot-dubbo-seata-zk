@@ -59,4 +59,5 @@ seata:
       session-timeout: 6000
   enable-auto-data-source-proxy: true
   use-jdk-proxy: false
+  data-source-proxy-mode: AT
 
